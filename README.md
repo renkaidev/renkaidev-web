@@ -42,4 +42,4 @@ Este proyecto está diseñado estructuralmente para ser hospedado en infraestruc
 - Toda la data es inmutable (SSG).
 
 ## 📄 Licencia
-Este proyecto es un portafolio profesional y no se distribuye bajo licencias de código abierto de libre uso comercial sin previa autorización. Todos los derechos reservados.
+Este proyecto es una página de servicios profesional y no se distribuye bajo licencias de código abierto de libre uso comercial sin previa autorización. Todos los derechos reservados.
