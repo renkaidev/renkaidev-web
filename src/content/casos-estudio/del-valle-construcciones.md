@@ -8,7 +8,7 @@ tags: ["Transformación Digital", "Automatización", "Next.js", "FastAPI", "Post
 ---
 
 ## Contexto de Negocio
-Del Valle Construcciones requería una modernización integral en su forma de interactuar con prospectos y clientes. El proyecto se enfocó en comprender sus procesos internos para poder estructurar y optimizar la captación comercial antes de escribir una sola línea de código.
+Del Valle Construcciones requería una modernización integral en su forma de interactuar con prospectos y clientes. El proyecto se enfocó en comprender sus procesos internos para poder estructurar y optimizar la captación comercial antes de iniciar el desarrollo tecnológico.
 
 ## El Problema del Cliente
 La empresa carecía casi por completo de presencia digital. Su estrategia comercial dependía del "boca a boca" y de un perfil personal en Facebook. 
