@@ -14,7 +14,7 @@ const isActive = (href: string) => {
   return currentPath.startsWith(href);
 };
 ---
-<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/10 transition-all duration-300" id="main-header">
+<header class="fixed top-0 w-full z-40 bg-surface/80 backdrop-blur-md border-b border-outline-variant/10 transition-all duration-300" id="main-header">
     <nav class="flex justify-between items-center px-gutter h-20 max-w-container-max mx-auto relative">
         <div class="flex items-center gap-2 z-50">
             <a href="/" aria-label="Volver al inicio" class="font-headline-md text-headline-md font-bold text-on-surface hover:text-primary transition-colors">RenkaiDev</a>
@@ -40,37 +40,37 @@ const isActive = (href: string) => {
         </a>
 
         <!-- Mobile Menu Button -->
-        <button id="mobile-menu-btn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 z-50 relative focus:outline-none" aria-label="Abrir menú">
+        <button id="mobile-menu-btn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 z-[60] relative focus:outline-none" aria-label="Abrir menú">
             <span class="w-6 h-0.5 bg-on-surface transition-all duration-300 rounded-full block absolute origin-center transform -translate-y-2"></span>
             <span class="w-6 h-0.5 bg-on-surface transition-all duration-300 rounded-full block absolute origin-center transform"></span>
             <span class="w-6 h-0.5 bg-on-surface transition-all duration-300 rounded-full block absolute origin-center transform translate-y-2"></span>
         </button>
     </nav>
-
-    <!-- Mobile Sidebar -->
-    <div id="mobile-sidebar" class="fixed inset-y-0 right-0 w-[80%] max-w-sm bg-surface-container-high/95 backdrop-blur-xl border-l border-outline-variant/10 shadow-2xl transform translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] z-40 flex flex-col md:hidden">
-        <div class="flex flex-col pt-24 px-8 gap-6 h-full overflow-y-auto">
-            {navLinks.map((link) => (
-                <a 
-                    href={link.href} 
-                    class={`font-body-md text-xl transition-colors duration-200 ${
-                        isActive(link.href) 
-                            ? 'text-primary font-bold' 
-                            : 'text-on-surface-variant hover:text-primary'
-                    }`}
-                >
-                    {link.label}
-                </a>
-            ))}
-            <a href="/sobre-mi#contact" class="bg-primary text-on-primary px-6 py-3 rounded-lg font-bold hover:opacity-80 transition-all text-center mt-4">
-                Solicitar asesoría
-            </a>
-        </div>
-    </div>
-    
-    <!-- Overlay for Sidebar -->
-    <div id="mobile-overlay" class="fixed inset-0 bg-black/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 z-30 md:hidden"></div>
 </header>
+
+<!-- Overlay for Sidebar -->
+<div id="mobile-overlay" class="fixed inset-0 bg-black/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 z-50 md:hidden"></div>
+
+<!-- Mobile Sidebar -->
+<div id="mobile-sidebar" class="fixed inset-y-0 right-0 w-[80%] max-w-sm bg-surface-container-high/95 backdrop-blur-xl border-l border-outline-variant/10 shadow-2xl transform translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] z-[55] flex flex-col md:hidden">
+    <div class="flex flex-col pt-24 px-8 gap-6 h-full overflow-y-auto pb-8">
+        {navLinks.map((link) => (
+            <a 
+                href={link.href} 
+                class={`font-body-md text-xl transition-colors duration-200 ${
+                    isActive(link.href) 
+                        ? 'text-primary font-bold' 
+                        : 'text-on-surface-variant hover:text-primary'
+                }`}
+            >
+                {link.label}
+            </a>
+        ))}
+        <a href="/sobre-mi#contact" class="bg-primary text-on-primary px-6 py-3 rounded-lg font-bold hover:opacity-80 transition-all text-center mt-4">
+            Solicitar asesoría
+        </a>
+    </div>
+</div>
 
 <script>
     // Header Scroll behavior
