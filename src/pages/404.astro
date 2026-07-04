@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="404: Página no encontrada | RenkaiDev">
+  <Header />
+  
+  <main class="min-h-screen flex items-center justify-center pt-20 px-gutter">
+    <div class="max-w-xl mx-auto text-center">
+      <span class="font-code-sm text-primary uppercase tracking-widest mb-4 inline-block">Error 404</span>
+      <h1 class="font-display-lg text-[64px] text-on-surface mb-6 leading-tight">
+        Ruta no <br/><span class="text-primary">Encontrada</span>
+      </h1>
+      <p class="font-body-lg text-on-surface-variant mb-10">
+        Parece que te has desviado del flujo principal. La página que buscas no existe o ha sido movida.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a class="w-full sm:w-auto bg-primary text-on-primary px-8 py-3 rounded-xl font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-all" href="/">
+          Volver al Inicio
+          <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+        </a>
+        <a class="w-full sm:w-auto px-8 py-3 rounded-xl font-bold text-primary border border-primary/30 hover:bg-primary/10 transition-all flex items-center justify-center gap-2" href="/servicios">
+          Ver Servicios
+        </a>
+      </div>
+    </div>
+  </main>
+  
+  <Footer />
+</Layout>

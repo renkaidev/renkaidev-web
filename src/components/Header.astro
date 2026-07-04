@@ -1,0 +1,53 @@
+---
+const currentPath = Astro.url.pathname;
+
+const navLinks = [
+  { href: '/', label: 'Inicio' },
+  { href: '/servicios', label: 'Servicios' },
+  { href: '/casos', label: 'Casos de Estudio' },
+  { href: '/sobre-mi', label: 'Sobre Mí' },
+];
+
+const isActive = (href: string) => {
+  if (href === '/') return currentPath === '/';
+  return currentPath.startsWith(href);
+};
+---
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/10">
+    <nav class="flex justify-between items-center px-gutter h-20 max-w-container-max mx-auto">
+        <div class="flex items-center gap-2">
+            <a href="/" aria-label="Volver al inicio" class="font-headline-md text-headline-md font-bold text-on-surface hover:text-primary transition-colors">RenkaiDev</a>
+        </div>
+        <div class="hidden md:flex items-center gap-8">
+            {navLinks.map((link) => (
+                <a 
+                    href={link.href} 
+                    class={`font-body-md text-body-md transition-colors duration-200 ${
+                        isActive(link.href) 
+                            ? 'text-primary font-bold border-b-2 border-primary pb-1' 
+                            : 'text-on-surface-variant font-medium hover:text-primary'
+                    }`}
+                >
+                    {link.label}
+                </a>
+            ))}
+        </div>
+        <a href="/sobre-mi#contact" class="bg-primary text-on-primary px-6 py-2 rounded-lg font-bold hover:opacity-80 transition-all text-body-md inline-block">
+            Solicitar asesoría
+        </a>
+    </nav>
+</header>
+
+<script>
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (header) {
+            if (window.scrollY > 20) {
+                header.classList.add('py-2');
+                header.classList.remove('py-4');
+            } else {
+                header.classList.remove('py-2');
+            }
+        }
+    });
+</script>

@@ -1,0 +1,74 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+const caseStudies = await getCollection('casos-estudio');
+---
+
+<Layout title="Casos de Estudio | RenkaiDev" description="Explora casos de estudio reales sobre consultoría técnica, arquitectura de software y optimización de infraestructura por Pablo Valdés Sandoval.">
+  <Header />
+  
+  <main class="pt-20">
+    <!-- Header Section -->
+    <section class="py-section-gap px-gutter max-w-container-max mx-auto relative overflow-hidden animate-on-scroll">
+      <div class="relative z-10 text-center space-y-4">
+        <span class="font-code-sm text-code-sm text-primary bg-primary/10 px-3 py-1 rounded-full uppercase tracking-wider">
+          Portafolio de Soluciones
+        </span>
+        <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface max-w-3xl mx-auto">
+          Casos de Estudio
+        </h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+          Proyectos reales de ingeniería donde la tecnología fue la herramienta para resolver problemas de negocio, automatizar procesos e impulsar la transformación digital.
+        </p>
+      </div>
+    </section>
+
+    <!-- Case Studies Grid -->
+    <section class="py-section-gap px-gutter max-w-container-max mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {caseStudies.map((study, index) => (
+          <a href={`/casos/${study.id}`} class="block group animate-on-scroll" style={`transition-delay: ${index * 50}ms;`}>
+            <article class="glass-card p-8 rounded-xl flex flex-col h-full transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 relative overflow-hidden">
+              <div class="flex justify-between items-start mb-6">
+                <span class="font-code-sm text-xs px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">
+                  {study.data.status}
+                </span>
+                <span class="font-code-sm text-sm text-on-surface-variant bg-surface-container px-2 py-1 rounded">
+                  {study.data.year}
+                </span>
+              </div>
+              
+              <h2 class="font-headline-md text-headline-md text-on-surface mb-4 group-hover:text-primary transition-colors">
+                {study.data.title}
+              </h2>
+              
+              <p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                {study.data.description}
+              </p>
+              
+              <div class="mt-auto pt-6 border-t border-outline-variant/10">
+                <div class="flex flex-wrap gap-2">
+                  {study.data.tags?.slice(0, 3).map(tag => (
+                    <span class="font-code-sm text-xs bg-surface-container-high text-on-surface-variant px-2 py-1 rounded-md border border-outline-variant/20">
+                      {tag}
+                    </span>
+                  ))}
+                  {study.data.tags && study.data.tags.length > 3 && (
+                    <span class="font-code-sm text-xs bg-surface-container-high text-on-surface-variant px-2 py-1 rounded-md border border-outline-variant/20">
+                      +{study.data.tags.length - 3}
+                    </span>
+                  )}
+                </div>
+              </div>
+            </article>
+          </a>
+        ))}
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>

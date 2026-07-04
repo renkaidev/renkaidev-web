@@ -1,0 +1,44 @@
+---
+---
+<div id="custom-cursor" class="hidden md:flex fixed top-0 left-0 w-8 h-8 rounded-full border border-primary pointer-events-none z-[100] mix-blend-screen transition-all duration-75 ease-out items-center justify-center">
+    <div class="w-1.5 h-1.5 bg-primary rounded-full shadow-[0_0_10px_var(--color-primary)]"></div>
+</div>
+
+<script>
+    import gsap from 'gsap';
+
+    const cursor = document.getElementById('custom-cursor');
+
+    if(cursor) {
+        window.addEventListener('mousemove', (e) => {
+            gsap.to(cursor, {
+                x: e.clientX - 16,
+                y: e.clientY - 16,
+                duration: 0.15,
+                ease: "power2.out"
+            });
+        });
+
+        // Aplicar efecto magnético y bloom a interactuables
+        const interactives = document.querySelectorAll('a, button, input, textarea');
+        
+        interactives.forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                gsap.to(cursor, { 
+                    scale: 1.8, 
+                    borderColor: 'rgba(137, 206, 255, 0.4)', 
+                    backgroundColor: 'rgba(137, 206, 255, 0.1)', 
+                    duration: 0.3 
+                });
+            });
+            el.addEventListener('mouseleave', () => {
+                gsap.to(cursor, { 
+                    scale: 1, 
+                    borderColor: 'rgba(137, 206, 255, 1)', 
+                    backgroundColor: 'transparent', 
+                    duration: 0.3 
+                });
+            });
+        });
+    }
+</script>

@@ -1,0 +1,160 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="IT Consultant | Tecnología con Propósito" description="Transformando problemas en soluciones tecnológicas profundas. Consultoría TI, arquitectura de software y desarrollo web por Pablo Valdés Sandoval.">
+  <Header />
+  
+  <main class="pt-20">
+    <!-- Hero Section -->
+    <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden px-gutter animate-on-scroll">
+        <div class="absolute inset-0 z-0"></div>
+        <div class="relative z-10 max-w-4xl text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary mb-8 animate-pulse shadow-[0_0_15px_rgba(137,206,255,0.2)]">
+                <span class="material-symbols-outlined text-[14px]">eco</span>
+                <span class="font-code-sm text-code-sm uppercase tracking-wider">Equilibrio entre Naturaleza y Tecnología</span>
+            </div>
+            
+            <h1 class="font-display-lg text-display-lg-mobile md:text-[56px] text-on-surface mb-6 leading-tight drop-shadow-[0_0_30px_rgba(137,206,255,0.15)]">
+                Transformando Problemas en <br/> <span class="text-primary hover:text-white transition-colors duration-300 hover:drop-shadow-[0_0_15px_var(--color-primary)]">Soluciones Profundas</span>
+            </h1>
+            
+            <p class="font-body-lg text-[20px] text-on-surface-variant mb-12 max-w-3xl mx-auto leading-relaxed">
+                Mi objetivo no es solo escribir código, es entender la raíz de tu necesidad. Utilizo la programación como una herramienta para facilitar nuestro día a día, construyendo sistemas que potencian tu negocio sin perjudicar el entorno. Tecnología con propósito y consciencia.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                <!-- Bloom Effect Button -->
+                <a href="/sobre-mi#contact" class="w-full sm:w-auto bg-primary text-on-primary px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 group transition-all duration-300 hover:shadow-[0_0_30px_rgba(137,206,255,0.6)] hover:bg-white hover:text-primary-container">
+                    Solicitar asesoría
+                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                </a>
+                <a href="/casos" class="w-full sm:w-auto border border-outline-variant text-on-surface px-8 py-4 rounded-xl font-bold hover:bg-surface-variant hover:border-primary/50 hover:shadow-[0_0_15px_rgba(137,206,255,0.2)] transition-all flex items-center justify-center gap-2">
+                    Ver casos de estudio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section class="py-section-gap px-gutter max-w-container-max mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+            <div class="md:col-span-8 glass-card p-10 rounded-2xl relative overflow-hidden group hover:border-primary/30 transition-all duration-500 hover:shadow-[0_0_30px_rgba(137,206,255,0.1)]">
+                <div class="relative z-10">
+                    <span class="font-label-caps text-label-caps text-primary mb-4 block uppercase tracking-widest">Filosofía de Trabajo</span>
+                    <h2 class="font-headline-md text-headline-md text-on-surface mb-6 max-w-lg leading-tight group-hover:drop-shadow-[0_0_8px_rgba(137,206,255,0.3)] transition-all">Más allá del código: Resolviendo la raíz del problema</h2>
+                    <p class="text-on-surface-variant font-body-lg max-w-2xl mb-8 leading-relaxed">
+                        Entender el contexto es fundamental. Cada solución tecnológica que implemento está diseñada tras un análisis exhaustivo de tu necesidad real. No busco aplicar parches temporales, sino construir puentes sólidos que conecten la problemática actual con una solución sostenible, humana y eficiente.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center gap-2 bg-surface-container-high px-4 py-2 rounded-lg border border-outline-variant/30 hover:border-primary/50 transition-colors">
+                            <span class="material-symbols-outlined text-primary">psychology</span>
+                            <span class="font-code-sm text-code-sm">Análisis Profundo</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-surface-container-high px-4 py-2 rounded-lg border border-outline-variant/30 hover:border-primary/50 transition-colors">
+                            <span class="material-symbols-outlined text-primary">nature</span>
+                            <span class="font-code-sm text-code-sm">Tecnología Consciente</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute top-0 right-0 w-1/2 h-full opacity-5 pointer-events-none group-hover:opacity-10 transition-opacity duration-700">
+                    <span class="material-symbols-outlined text-[320px] text-primary absolute -right-10 -top-10" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+                </div>
+            </div>
+            
+            <div class="md:col-span-4 bg-primary-container p-10 rounded-2xl flex flex-col justify-between text-on-primary-container border border-primary hover:shadow-[0_0_40px_rgba(14,165,233,0.3)] transition-all duration-500 group">
+                <div>
+                    <span class="material-symbols-outlined text-[48px] mb-6 group-hover:scale-110 transition-transform duration-300">balance</span>
+                    <h3 class="font-headline-md text-headline-md font-bold mb-4">Equilibrio Técnico</h3>
+                    <p class="font-body-md opacity-90 leading-relaxed">
+                        Creo fielmente en que la naturaleza y la tecnología pueden convivir y potenciarse. Mis arquitecturas buscan ser lo más eficientes posibles, consumiendo solo los recursos necesarios.
+                    </p>
+                </div>
+                <a class="mt-8 font-bold flex items-center gap-2 group-hover:translate-x-2 transition-transform" href="/sobre-mi">
+                    Conoce mi enfoque <span class="material-symbols-outlined">arrow_right_alt</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Importance of Case Studies -->
+    <section class="py-section-gap bg-surface-container-lowest/50 animate-on-scroll relative">
+        <!-- Decoración sutil -->
+        <div class="absolute left-0 top-1/2 -translate-y-1/2 w-32 h-32 bg-primary/20 blur-[100px] rounded-full"></div>
+
+        <div class="max-w-container-max mx-auto px-gutter">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6 relative z-10">
+                <div class="max-w-2xl">
+                    <h2 class="font-display-lg text-display-lg-mobile md:text-headline-md text-on-surface mb-4">El valor de la Experiencia</h2>
+                    <p class="text-on-surface-variant font-body-lg">
+                        La mejor forma de demostrar mi compromiso con la solución de problemas es mostrarte cómo he abordado los retos del pasado. Cada caso de estudio es un viaje desde la problemática hasta la implementación tecnológica.
+                    </p>
+                </div>
+                <a href="/casos" class="text-primary font-bold flex items-center gap-2 group hover:drop-shadow-[0_0_8px_rgba(137,206,255,0.8)] transition-all">
+                    Explorar el historial <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">trending_flat</span>
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Case Placeholder 1 -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-outline-variant/30 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(137,206,255,0.15)] transition-all duration-500 group cursor-pointer">
+                    <div class="aspect-[21/9] bg-surface-container overflow-hidden relative">
+                        <div class="absolute inset-0 bg-primary/20 mix-blend-overlay z-10 group-hover:bg-transparent transition-colors duration-500"></div>
+                        <img alt="SaaS dashboard optimization" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2_vCVWbE3D3-02ZiqjaA_xRH3KsmhYpxbQI1BGBK2z6Z74BlWRyIOpLuE1D7LQCefJGhda9xPt72ss4lbcAjPYhxs_1c4nRdTuhTJ58vR5y4GTVkzMt_zMZW0PM9KVSr4UHaVqM5cvVUrVS7WcWBf05LEye875ohHOGD2dCQMGU_STHxt2Aoxx9UyPaYlnnfgA7untwdna8Dlg4Xm1C66HGcpDvC7PrvYm6IeXfgxkt0TP-bFVleAia66QOMf84SfiCenpWZqteQ"/>
+                    </div>
+                    <div class="p-8">
+                        <span class="font-code-sm text-primary mb-3 block">Próximamente: Caso 01</span>
+                        <h3 class="font-headline-md text-on-surface mb-3 group-hover:text-primary transition-colors">Optimización de latencia para Fintech</h3>
+                        <p class="text-on-surface-variant font-body-md">
+                            Cómo abordé un problema crítico de rendimiento reestructurando la arquitectura para consumir menos recursos y ofrecer respuestas instantáneas.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Case Placeholder 2 -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-outline-variant/30 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(137,206,255,0.15)] transition-all duration-500 group cursor-pointer">
+                    <div class="aspect-[21/9] bg-surface-container overflow-hidden relative">
+                        <div class="absolute inset-0 bg-primary/20 mix-blend-overlay z-10 group-hover:bg-transparent transition-colors duration-500"></div>
+                        <img alt="E-commerce scaling strategy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBvlYSOiMYniQFit2BznG4YM3pieo1tbo-3XDTy4e7GkF6GClblWP1h24NHXmn0CAqtJ2AW8F15-Qd3FD1Y370M7ehpK2X4V4pGGEVSthoXBvEuP0nGkYxiJXtYMdtPP3qzl3NLGfT6vcBNO5RB4Gjno0wt68Z84-jfrDIHT1znILMVYp7QxtCxojJb6ZUm_zWCNvQyf9lIS8qrOM8zUuja7aUQ0mtI7hsOTji8uPG-mkVlsAg_xW4XUvjUphl4Yu_Yzo9AjFNvUI"/>
+                    </div>
+                    <div class="p-8">
+                        <span class="font-code-sm text-primary mb-3 block">Próximamente: Caso 02</span>
+                        <h3 class="font-headline-md text-on-surface mb-3 group-hover:text-primary transition-colors">Escalado Crítico y Sostenibilidad</h3>
+                        <p class="text-on-surface-variant font-body-md">
+                            Resolviendo caídas de servidor durante picos de tráfico extremo, priorizando una estrategia de balanceo de carga eficiente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-section-gap px-gutter text-center relative animate-on-scroll">
+        <div class="max-w-3xl mx-auto glass-card p-12 md:p-20 rounded-[2.5rem] border border-primary/30 relative overflow-hidden group hover:border-primary/60 transition-all duration-500">
+            <div class="absolute inset-0 bg-primary/5 group-hover:bg-primary/10 transition-colors duration-500"></div>
+            
+            <div class="relative z-10">
+                <h2 class="font-display-lg text-display-lg-mobile md:text-[40px] text-on-surface mb-6 leading-tight group-hover:drop-shadow-[0_0_10px_rgba(137,206,255,0.3)] transition-all">
+                    ¿Tienes un reto que resolver?
+                </h2>
+                <p class="font-body-lg text-on-surface-variant mb-10 max-w-xl mx-auto">
+                    Transformemos esa problemática en un sistema funcional. Agenda una llamada breve para explorar cómo puedo ayudarte con una perspectiva técnica y consciente.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-6">
+                    <a href="/sobre-mi#contact" class="bg-primary text-on-primary px-10 py-5 rounded-xl font-bold hover:bg-white hover:text-primary-container transition-all duration-300 shadow-[0_0_20px_rgba(137,206,255,0.2)] hover:shadow-[0_0_40px_rgba(137,206,255,0.6)] inline-block">
+                        Reservar consultoría
+                    </a>
+                    <a href="mailto:pablovaldescontacto@gmail.com" class="border border-outline-variant text-on-surface px-10 py-5 rounded-xl font-bold hover:bg-surface-variant hover:border-primary/50 hover:shadow-[0_0_15px_rgba(137,206,255,0.2)] transition-all duration-300 inline-block">
+                        Enviar un Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>

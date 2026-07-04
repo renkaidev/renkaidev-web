@@ -1,0 +1,205 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { Image } from 'astro:assets';
+import profileImg from '../assets/pvs-formal.jpg';
+import ContactForm from '../components/ContactForm.astro';
+---
+
+<Layout title="Sobre Mí y Contacto | Pablo Valdés Sandoval">
+  <Header />
+  
+  <main class="pt-20">
+    <!-- Section 1: Intro -->
+    <section class="relative min-h-[716px] flex items-center px-gutter py-section-gap overflow-hidden">
+        <div class="max-w-container-max mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-12 relative z-10">
+            <div class="md:col-span-7 flex flex-col justify-center animate-on-scroll">
+                <span class="font-code-sm text-code-sm text-primary uppercase tracking-widest mb-4 inline-block">RenkaiDev</span>
+                <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6">
+                    Hola, soy <span class="text-primary">Pablo Valdés Sandoval</span>.
+                </h1>
+                <h2 class="font-headline-md text-headline-md text-on-surface-variant mb-6">
+                    Full Stack Software Engineer | Product-Minded System Builder | DevOps & AI Explorer
+                </h2>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-8">
+                    Creo en la ingeniería honesta. En lugar de vender humo o tendencias pasajeras, me dedico a construir soluciones tecnológicas <strong>necesarias</strong> y funcionales. Mi filosofía es que la tecnología debe resolver problemas tangibles, operando en sinergia y completo equilibrio con las operaciones reales de tu negocio.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a class="bg-primary text-on-primary px-8 py-3 rounded-xl font-bold flex items-center gap-2 hover:opacity-90 transition-all" href="#contact">
+                        Contactar ahora
+                        <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+                    </a>
+                    <div class="flex items-center gap-3 px-4">
+                        <span class="relative flex h-3 w-3">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                        </span>
+                        <span class="font-code-sm text-code-sm text-on-surface-variant">Disponible para nuevos retos</span>
+                    </div>
+                </div>
+            </div>
+            <div class="md:col-span-5 flex items-center justify-center animate-on-scroll" style="transition-delay: 150ms;">
+                <div class="relative w-full aspect-square max-w-md group">
+                    <div class="absolute inset-0 bg-primary/20 blur-[100px] rounded-full group-hover:bg-primary/40 transition-all duration-700"></div>
+                    <div class="relative glass-card rounded-3xl overflow-hidden aspect-square border border-outline-variant/30">
+                        <Image src={profileImg} alt="Pablo Valdés Sandoval" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Skills/Tools -->
+    <section class="py-section-gap px-gutter bg-surface-container-lowest/50 animate-on-scroll">
+        <div class="max-w-container-max mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+                <div class="max-w-xl">
+                    <h2 class="font-headline-md text-headline-md mb-4 uppercase tracking-tight">Capacidades Técnicas</h2>
+                    <p class="text-on-surface-variant text-body-md">No me caso con ninguna tecnología. Evalúo cada proyecto y selecciono las herramientas que mejor resuelven el problema, garantizando escalabilidad y eficiencia operativa.</p>
+                </div>
+                <div class="font-code-sm text-code-sm text-on-secondary-container bg-surface-container-high px-4 py-1.5 rounded-full border border-outline-variant/20">
+                    Agnóstico Tecnológico
+                </div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="glass-card p-6 rounded-2xl flex flex-col items-center text-center transition-all duration-300 hover:border-primary/50 hover:-translate-y-2 hover:shadow-[0_10px_30px_-10px_rgba(137,206,255,0.2)]">
+                    <div class="w-12 h-12 mb-4 text-primary flex items-center justify-center">
+                        <span class="material-symbols-outlined text-[40px]">architecture</span>
+                    </div>
+                    <h3 class="font-headline-md text-body-md mb-1">Arquitectura Backend</h3>
+                    <span class="font-code-sm text-[10px] text-on-surface-variant uppercase">Lógica y APIs</span>
+                </div>
+                <div class="glass-card p-6 rounded-2xl flex flex-col items-center text-center transition-all duration-300 hover:border-primary/50 hover:-translate-y-2 hover:shadow-[0_10px_30px_-10px_rgba(137,206,255,0.2)]" style="transition-delay: 50ms;">
+                    <div class="w-12 h-12 mb-4 text-primary flex items-center justify-center">
+                        <span class="material-symbols-outlined text-[40px]">web</span>
+                    </div>
+                    <h3 class="font-headline-md text-body-md mb-1">Desarrollo Frontend</h3>
+                    <span class="font-code-sm text-[10px] text-on-surface-variant uppercase">Interfaces Web</span>
+                </div>
+                <div class="glass-card p-6 rounded-2xl flex flex-col items-center text-center transition-all duration-300 hover:border-primary/50 hover:-translate-y-2 hover:shadow-[0_10px_30px_-10px_rgba(137,206,255,0.2)]" style="transition-delay: 100ms;">
+                    <div class="w-12 h-12 mb-4 text-primary flex items-center justify-center">
+                        <span class="material-symbols-outlined text-[40px]">smartphone</span>
+                    </div>
+                    <h3 class="font-headline-md text-body-md mb-1">Soluciones Móviles</h3>
+                    <span class="font-code-sm text-[10px] text-on-surface-variant uppercase">Apps Nativas & Híbridas</span>
+                </div>
+                <div class="glass-card p-6 rounded-2xl flex flex-col items-center text-center transition-all duration-300 hover:border-primary/50 hover:-translate-y-2 hover:shadow-[0_10px_30px_-10px_rgba(137,206,255,0.2)]" style="transition-delay: 150ms;">
+                    <div class="w-12 h-12 mb-4 text-primary flex items-center justify-center">
+                        <span class="material-symbols-outlined text-[40px]">database</span>
+                    </div>
+                    <h3 class="font-headline-md text-body-md mb-1">Modelado de Datos</h3>
+                    <span class="font-code-sm text-[10px] text-on-surface-variant uppercase">SQL & NoSQL</span>
+                </div>
+                <div class="glass-card p-6 rounded-2xl flex flex-col items-center text-center transition-all duration-300 hover:border-primary/50 hover:-translate-y-2 hover:shadow-[0_10px_30px_-10px_rgba(137,206,255,0.2)]" style="transition-delay: 200ms;">
+                    <div class="w-12 h-12 mb-4 text-primary flex items-center justify-center">
+                        <span class="material-symbols-outlined text-[40px]">cloud</span>
+                    </div>
+                    <h3 class="font-headline-md text-body-md mb-1">DevOps & Cloud</h3>
+                    <span class="font-code-sm text-[10px] text-on-surface-variant uppercase">Infraestructura Segura</span>
+                </div>
+                <div class="glass-card p-6 rounded-2xl flex flex-col items-center text-center transition-all duration-300 hover:border-primary/50 hover:-translate-y-2 hover:shadow-[0_10px_30px_-10px_rgba(137,206,255,0.2)]" style="transition-delay: 250ms;">
+                    <div class="w-12 h-12 mb-4 text-primary flex items-center justify-center">
+                        <span class="material-symbols-outlined text-[40px]">model_training</span>
+                    </div>
+                    <h3 class="font-headline-md text-body-md mb-1">Inteligencia Artificial</h3>
+                    <span class="font-code-sm text-[10px] text-on-surface-variant uppercase">Integración & Exploración</span>
+                </div>
+                <div class="glass-card p-6 rounded-2xl flex flex-col items-center text-center transition-all duration-300 hover:border-primary/50 hover:-translate-y-2 hover:shadow-[0_10px_30px_-10px_rgba(137,206,255,0.2)]" style="transition-delay: 300ms;">
+                    <div class="w-12 h-12 mb-4 text-primary flex items-center justify-center">
+                        <span class="material-symbols-outlined text-[40px]">hub</span>
+                    </div>
+                    <h3 class="font-headline-md text-body-md mb-1">Arquitectura de Sistemas</h3>
+                    <span class="font-code-sm text-[10px] text-on-surface-variant uppercase">Diseño End-to-End</span>
+                </div>
+                <div class="glass-card p-6 rounded-2xl flex flex-col items-center text-center transition-all duration-300 hover:border-primary/50 hover:-translate-y-2 hover:shadow-[0_10px_30px_-10px_rgba(137,206,255,0.2)]" style="transition-delay: 350ms;">
+                    <div class="w-12 h-12 mb-4 text-primary flex items-center justify-center">
+                        <span class="material-symbols-outlined text-[40px]">forum</span>
+                    </div>
+                    <h3 class="font-headline-md text-body-md mb-1">Comunicación Efectiva</h3>
+                    <span class="font-code-sm text-[10px] text-on-surface-variant uppercase">Soft Skills & Liderazgo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Professional Bio -->
+    <section class="py-section-gap px-gutter bg-surface-container-low/30 border-y border-outline-variant/10 animate-on-scroll">
+        <div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            <div class="lg:col-span-4 sticky top-28">
+                <h2 class="font-headline-md text-headline-md mb-4 text-primary">Filosofía Profesional</h2>
+                <div class="h-1 w-20 bg-primary mb-6"></div>
+                <p class="font-code-sm text-code-sm text-on-surface-variant leading-relaxed">
+                    "La tecnología no es para embellecer, es para dar soluciones necesarias. Construyo con un enfoque basado en el producto final, priorizando la sinergia y el equilibrio."
+                </p>
+            </div>
+            <div class="lg:col-span-8 space-y-8 font-body-lg text-on-surface-variant">
+                <p>
+                    A lo largo de mi trayectoria he trabajado de cerca con pymes y organizaciones, comprendiendo que el código es solo el 20% del trabajo; el 80% restante es entender el negocio y sus limitaciones operativas. No vendo humo, me enfoco en la cruda realidad de lo que una empresa realmente necesita para operar eficientemente.
+                </p>
+                <p>
+                    He diseñado herramientas digitales para Viña Gran Hidalgo y actualmente lidero el desarrollo integral de la plataforma comercial para Del Valle Construcciones. Además, mi experiencia desarrollando sistemas como Fiscalis me ha enseñado una dura pero valiosa lección como Arquitecto de Soluciones: una aplicación lista para producción no sirve de nada si la institución no cuenta con la infraestructura o madurez tecnológica para sostenerla.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8">
+                    <div class="p-6 border-l-2 border-primary bg-surface-container-high/20 hover:bg-surface-container-high/40 transition-colors">
+                        <h4 class="font-bold text-on-surface mb-2">Visión de Producto</h4>
+                        <p class="text-body-md">Construyo sistemas que resuelven problemas reales del cliente, planificando más allá del código para anticipar restricciones de infraestructura.</p>
+                    </div>
+                    <div class="p-6 border-l-2 border-primary bg-surface-container-high/20 hover:bg-surface-container-high/40 transition-colors">
+                        <h4 class="font-bold text-on-surface mb-2">Honestidad Técnica</h4>
+                        <p class="text-body-md">Soluciones necesarias en lugar de sobreingeniería. Si algo puede resolverse con automatizaciones simples, es el mejor camino.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3 & 4: Contact Details & Form -->
+    <section class="py-section-gap px-gutter animate-on-scroll" id="contact">
+        <div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-gutter">
+            <!-- Contact Details -->
+            <div class="flex flex-col justify-between py-8">
+                <div>
+                    <h2 class="font-display-lg text-display-lg-mobile md:text-[40px] mb-6 leading-tight">¿Tienes un reto técnico?<br/><span class="text-primary">Hablemos de ello.</span></h2>
+                    <p class="text-on-surface-variant text-body-lg mb-12 max-w-md">Si buscas optimizar tu flujo de trabajo o construir una solución digital sólida de inicio a fin, estoy a un mensaje de distancia.</p>
+                    
+                    <div class="space-y-6">
+                        <a class="flex items-center gap-6 p-6 glass-card rounded-2xl group hover:border-primary/50 hover:bg-surface-container-low transition-all" href="mailto:pablovaldescontacto@gmail.com">
+                            <div class="w-14 h-14 bg-surface-container-high rounded-xl flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-[28px]">mail</span>
+                            </div>
+                            <div>
+                                <p class="font-code-sm text-[12px] text-on-surface-variant uppercase">Email Directo</p>
+                                <p class="font-headline-md text-body-lg text-on-surface group-hover:text-primary transition-colors">pablovaldescontacto@gmail.com</p>
+                            </div>
+                        </a>
+                        <a class="flex items-center gap-6 p-6 glass-card rounded-2xl group hover:border-primary/50 hover:bg-surface-container-low transition-all" href="https://www.instagram.com/renkaidev/" target="_blank" rel="noopener noreferrer">
+                            <div class="w-14 h-14 bg-surface-container-high rounded-xl flex items-center justify-center text-[#E1306C] group-hover:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-[28px]">photo_camera</span>
+                            </div>
+                            <div>
+                                <p class="font-code-sm text-[12px] text-on-surface-variant uppercase">Instagram</p>
+                                <p class="font-headline-md text-body-lg text-on-surface group-hover:text-primary transition-colors">@renkaidev</p>
+                            </div>
+                        </a>
+                        <a class="flex items-center gap-6 p-6 glass-card rounded-2xl group hover:border-primary/50 hover:bg-surface-container-low transition-all" href="https://www.linkedin.com/in/pablo-vald%C3%A9s-6a4b0930b/" target="_blank" rel="noopener noreferrer">
+                            <div class="w-14 h-14 bg-surface-container-high rounded-xl flex items-center justify-center text-[#0077B5] group-hover:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-[28px]">work</span>
+                            </div>
+                            <div>
+                                <p class="font-code-sm text-[12px] text-on-surface-variant uppercase">LinkedIn Profile</p>
+                                <p class="font-headline-md text-body-lg text-on-surface group-hover:text-primary transition-colors">in/pablo-valdés</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <ContactForm />
+        </div>
+    </section>
+
+  </main>
+  
+  <Footer />
+</Layout>
