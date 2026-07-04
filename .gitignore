@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Contexto del proyecto para IAs (Privado)
+CONTEXTO_PROYECTO.md
