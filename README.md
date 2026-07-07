@@ -1,45 +1,90 @@
-# RenkaiDev - IT Consulting Portfolio
+# RenkaiDev Web
 
-Este repositorio contiene el código fuente del sitio web del portafolio profesional y catálogo de servicios de RenkaiDev. 
+Sitio web oficial de **RenkaiDev**, orientado a presentar servicios de consultoría TI, desarrollo de software, automatización de procesos y casos de estudio basados en proyectos reales.
 
-El sitio está construido enfocándose en alto rendimiento, accesibilidad y diseño centrado en el producto, sirviendo como una plataforma rápida y segura para la exhibición de casos de estudio y servicios de consultoría TI.
+El objetivo del proyecto es ofrecer una experiencia rápida, accesible y profesional, transmitiendo una propuesta de valor centrada en resolver problemas de negocio mediante tecnología.
 
-## 🚀 Tecnologías Principales
+## Características
 
-- **[Astro](https://astro.build/)**: Framework web para la generación de sitios estáticos (SSG) de carga ultrarrápida.
-- **[Tailwind CSS](https://tailwindcss.com/)**: Framework de utilidades CSS para diseño responsivo y moderno.
-- **[GSAP](https://gsap.com/)**: Biblioteca robusta de animaciones para transiciones fluidas de interfaz.
-- **TypeScript**: Para tipado estricto y seguridad en el código (colecciones de contenido).
+- Sitio estático optimizado para alto rendimiento.
+- Arquitectura preparada para SEO.
+- Diseño responsive y accesible.
+- Casos de estudio basados en proyectos reales.
+- Animaciones ligeras orientadas a mejorar la experiencia de usuario.
+- Preparado para despliegue en Cloudflare Pages.
 
-## 📂 Estructura del Proyecto
+## Stack Tecnológico
 
-- `/src/pages`: Rutas y vistas de la aplicación.
-- `/src/components`: Componentes modulares y reutilizables (UI, Header, Footer).
-- `/src/layouts`: Plantillas maestras de diseño.
-- `/src/content`: Colecciones de contenido Markdown (Casos de Estudio).
-- `/docs`: Documentación técnica y de arquitectura.
+- Astro
+- TypeScript
+- Tailwind CSS
+- GSAP
 
-## 🛠️ Instalación y Desarrollo Local
+## Estructura del Proyecto
 
-1. Instala las dependencias:
-   ```sh
-   npm install
-   ```
+```
+src/
+├── components/
+├── content/
+├── layouts/
+├── pages/
+├── styles/
+└── assets/
 
-2. Inicia el servidor de desarrollo local:
-   ```sh
-   npm run dev
-   ```
+docs/
+public/
+```
 
-3. Compila para producción:
-   ```sh
-   npm run build
-   ```
+## Desarrollo
 
-## 🔐 Privacidad y Seguridad (Cloudflare Ready)
-Este proyecto está diseñado estructuralmente para ser hospedado en infraestructuras Edge gratuitas como Cloudflare Pages. 
-- **Sin backend (No-Backend Architecture)**: Los formularios de contacto utilizan la API de correo nativa (`mailto:`) vía JavaScript en el cliente para evitar el procesamiento y almacenamiento de datos sensibles (Cumplimiento de normativas de Protección de Datos).
-- Toda la data es inmutable (SSG).
+Instalar dependencias:
 
-## 📄 Licencia
-Este proyecto es una página de servicios profesional y no se distribuye bajo licencias de código abierto de libre uso comercial sin previa autorización. Todos los derechos reservados.
+```bash
+npm install
+```
+
+Iniciar entorno de desarrollo:
+
+```bash
+npm run dev
+```
+
+Compilar para producción:
+
+```bash
+npm run build
+```
+
+Vista previa local:
+
+```bash
+npm run preview
+```
+
+## Arquitectura
+
+El proyecto sigue una arquitectura basada en componentes reutilizables y prioriza:
+
+- Separación de responsabilidades.
+- Código limpio.
+- Principios SOLID.
+- Accesibilidad.
+- SEO.
+- Rendimiento.
+- Mantenibilidad.
+
+## Despliegue
+
+La aplicación está preparada para ejecutarse en **Cloudflare Pages**, aprovechando una arquitectura estática para reducir complejidad, mejorar tiempos de carga y minimizar la superficie de ataque.
+
+## Casos de Estudio
+
+Los casos de estudio muestran proyectos reales desarrollados por RenkaiDev, explicando el problema abordado, el análisis realizado, la solución propuesta y las tecnologías utilizadas.
+
+Su propósito es demostrar el proceso de trabajo y el impacto de las soluciones, más que enumerar tecnologías.
+
+## Licencia
+
+Este repositorio corresponde al sitio web oficial de RenkaiDev.
+
+Salvo que se indique expresamente lo contrario, el código fuente, el contenido y el material gráfico son propiedad de RenkaiDev y no pueden ser utilizados, distribuidos o reproducidos sin autorización previa por escrito.
