@@ -4,7 +4,7 @@ description: "Diseño y desarrollo de un ERP a medida para digitalizar las opera
 year: 2026
 status: "Completado"
 role: "Liderazgo de Desarrollo / Arquitectura"
-tags: ["ERP", "Digitalización", "Gestión de Personal", "Arquitectura de Software"]
+tags: ["ERP", "Digitalización", "Gestión de Personal", "Arquitectura de Software", "CI/CD"]
 ---
 
 ## Contexto de Negocio

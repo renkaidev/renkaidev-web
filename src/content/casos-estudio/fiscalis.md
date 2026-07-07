@@ -4,7 +4,7 @@ description: "Digitalización de la recolección de datos en terreno mediante un
 year: 2026
 status: "Completado"
 role: "Desarrollo End-to-End"
-tags: ["Transformación Digital", "Aplicación Móvil", "Flutter", "FastAPI", "PostgreSQL"]
+tags: ["Transformación Digital", "Aplicación Móvil", "Flutter", "FastAPI", "PostgreSQL", "CI/CD"]
 ---
 
 ## Contexto de Negocio
