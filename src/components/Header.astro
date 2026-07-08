@@ -35,9 +35,12 @@ const isActive = (href: string) => {
                 </a>
             ))}
         </div>
-        <a href="/sobre-mi#contact" class="hidden md:inline-block bg-primary text-on-primary px-6 py-2 rounded-lg font-bold hover:opacity-80 transition-all text-body-md">
-            Solicitar asesoría
-        </a>
+        <div class="hidden md:flex items-center gap-4">
+            <div class="gtranslate_wrapper"></div>
+            <a href="/sobre-mi#contact" class="bg-primary text-on-primary px-6 py-2 rounded-lg font-bold hover:opacity-80 transition-all text-body-md">
+                Solicitar asesoría
+            </a>
+        </div>
 
         <!-- Mobile Menu Button -->
         <button id="mobile-menu-btn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 z-[60] relative focus:outline-none" aria-label="Abrir menú">
@@ -66,9 +69,12 @@ const isActive = (href: string) => {
                 {link.label}
             </a>
         ))}
-        <a href="/sobre-mi#contact" class="bg-primary text-on-primary px-6 py-3 rounded-lg font-bold hover:opacity-80 transition-all text-center mt-4">
-            Solicitar asesoría
-        </a>
+        <div class="mt-4 flex flex-col items-center gap-4">
+            <div class="gtranslate_wrapper"></div>
+            <a href="/sobre-mi#contact" class="w-full bg-primary text-on-primary px-6 py-3 rounded-lg font-bold hover:opacity-80 transition-all text-center">
+                Solicitar asesoría
+            </a>
+        </div>
     </div>
 </div>
 
