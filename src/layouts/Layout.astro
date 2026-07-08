@@ -49,6 +49,33 @@ const {
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@400&family=Geist:wght@600;700&display=swap" rel="stylesheet"/>
+    
+    <!-- SEO & Robots -->
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+
+    <!-- JSON-LD Structured Data for Local Business / Professional Service -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "RenkaiDev",
+      "image": new URL(image, Astro.url).toString(),
+      "description": description,
+      "url": Astro.site ? Astro.site.toString() : Astro.url.origin,
+      "founder": {
+        "@type": "Person",
+        "name": "Pablo Valdés Sandoval"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/pablo-vald%C3%A9s-6a4b0930b/",
+        "https://www.instagram.com/renkaidev/"
+      ],
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CL"
+      }
+    })} />
   </head>
   <body class="font-body-md text-body-md overflow-x-hidden antialiased selection:bg-primary/30 selection:text-primary-fixed cursor-default">
     <CyberBackground />
