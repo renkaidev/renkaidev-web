@@ -1,0 +1,122 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Perfil Profesional | Pablo Valdés Sandoval">
+  <Header />
+  
+  <main class="pt-20">
+    <!-- Intro Section -->
+    <section class="py-section-gap px-gutter border-b border-outline-variant/10 bg-surface-container-lowest relative overflow-hidden">
+        <div class="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+        <div class="max-w-container-max mx-auto relative z-10 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-8 animate-on-scroll">
+                <span class="font-code-sm text-code-sm text-primary uppercase tracking-widest mb-4 inline-block">Fact Sheet Técnico</span>
+                <h1 class="font-display-lg text-display-lg-mobile md:text-5xl mb-4">
+                    Pablo Valdés Sandoval
+                </h1>
+                <h2 class="font-headline-md text-headline-md text-on-surface-variant mb-6">
+                    Software Developer & Arquitecto de Soluciones TI
+                </h2>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-8">
+                    Profesional enfocado en construir sistemas eficientes y escalables. Capacidad comprobada para analizar problemas de negocio complejos y traducirlos en arquitecturas de software robustas. Agnosticismo tecnológico con fuerte inclinación hacia soluciones de alto rendimiento.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://www.linkedin.com/in/pablo-valdés-6a4b0930b/" target="_blank" rel="noopener noreferrer" class="bg-[#0077B5] text-white px-6 py-3 rounded-xl font-bold flex items-center gap-2 hover:opacity-90 transition-all">
+                        <span class="material-symbols-outlined notranslate text-[20px]" translate="no">work</span>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/renkaidev" target="_blank" rel="noopener noreferrer" class="bg-[#24292e] text-white px-6 py-3 rounded-xl font-bold flex items-center gap-2 hover:opacity-90 transition-all border border-white/10">
+                        <span class="material-symbols-outlined notranslate text-[20px]" translate="no">code</span>
+                        GitHub
+                    </a>
+                    <a href="https://www.instagram.com/renkaidev/" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#F56040] text-white px-6 py-3 rounded-xl font-bold flex items-center gap-2 hover:opacity-90 transition-all shadow-[0_0_15px_rgba(253,29,29,0.3)] border border-white/10">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        Instagram
+                    </a>
+                </div>
+            </div>
+            <div class="md:col-span-4 flex justify-center animate-on-scroll">
+                <div class="w-full max-w-xs aspect-square rounded-3xl overflow-hidden border border-outline-variant/30 shadow-[0_0_30px_rgba(137,206,255,0.1)]">
+                    <img src="/images/pvs-formal.jpg" alt="Pablo Valdés Sandoval" class="w-full h-full object-cover" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stack and Core Skills -->
+    <section class="py-section-gap px-gutter bg-surface-container-low animate-on-scroll">
+        <div class="max-w-container-max mx-auto">
+            <h2 class="font-headline-md text-headline-md mb-10 text-center">Stack Tecnológico y Capacidades Técnicas</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Frontend -->
+                <div class="glass-card p-6 rounded-2xl border border-outline-variant/20 hover:border-primary/40 transition-all">
+                    <h3 class="font-bold text-lg text-primary mb-4 flex items-center gap-2">
+                        <span class="material-symbols-outlined notranslate" translate="no">web</span>
+                        Frontend & UI/UX
+                    </h3>
+                    <ul class="space-y-2 text-on-surface-variant font-code-sm">
+                        <li>• Astro, React, TypeScript</li>
+                        <li>• Tailwind CSS, CSS Arquitecture</li>
+                        <li>• Core Web Vitals Optimization</li>
+                        <li>• Responsive Design & Accesibilidad</li>
+                    </ul>
+                </div>
+                
+                <!-- Backend & APIs -->
+                <div class="glass-card p-6 rounded-2xl border border-outline-variant/20 hover:border-primary/40 transition-all">
+                    <h3 class="font-bold text-lg text-primary mb-4 flex items-center gap-2">
+                        <span class="material-symbols-outlined notranslate" translate="no">dns</span>
+                        Backend & Bases de Datos
+                    </h3>
+                    <ul class="space-y-2 text-on-surface-variant font-code-sm">
+                        <li>• Node.js, Express, FastAPI (Python)</li>
+                        <li>• Diseño de APIs RESTful</li>
+                        <li>• SQL (PostgreSQL, MySQL)</li>
+                        <li>• Modelado de Datos y Arquitectura</li>
+                    </ul>
+                </div>
+
+                <!-- Infra & DevOps -->
+                <div class="glass-card p-6 rounded-2xl border border-outline-variant/20 hover:border-primary/40 transition-all">
+                    <h3 class="font-bold text-lg text-primary mb-4 flex items-center gap-2">
+                        <span class="material-symbols-outlined notranslate" translate="no">cloud</span>
+                        Cloud, DevOps & Herramientas
+                    </h3>
+                    <ul class="space-y-2 text-on-surface-variant font-code-sm">
+                        <li>• Cloudflare / Workers, Vercel</li>
+                        <li>• Supabase, VPS, Docker Compose</li>
+                        <li>• Git, CI/CD Pipeline</li>
+                        <li>• Linux, Bash, Hardening Básico</li>
+                        <li>• Docker (Nociones)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Approach -->
+    <section class="py-section-gap px-gutter bg-surface-container-lowest animate-on-scroll">
+        <div class="max-w-container-max mx-auto max-w-3xl">
+            <h2 class="font-headline-md text-headline-md mb-8 text-center">Enfoque Profesional</h2>
+            <div class="space-y-6 text-on-surface-variant font-body-lg">
+                <p>
+                    <strong>Agnóstico Tecnológico:</strong> La tecnología es un medio, no el fin. Mi proceso inicia analizando profundamente las restricciones operativas y de negocio antes de escribir la primera línea de código para luego escoger las herramientas adecuadas.
+                </p>
+                <p>
+                    <strong>Product-Minded:</strong> Poseo una visión holística del desarrollo. No solo me enfoco en la ejecución técnica, sino en el impacto que el software tendrá en los usuarios finales y en la eficiencia de la organización (mejoras operativas, automatización).
+                </p>
+                <p>
+                    <strong>Calidad de Código:</strong> Aplicación de principios SOLID, Clean Code y arquitectura estructurada para asegurar mantenibilidad y escalabilidad a largo plazo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+  </main>
+  
+  <Footer />
+</Layout>
