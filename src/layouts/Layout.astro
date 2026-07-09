@@ -11,7 +11,7 @@ interface Props {
 
 const { 
   title, 
-  description = "Consultoría Tecnológica, Arquitectura de Software y Desarrollo de Sistemas End-to-End por Pablo Valdés Sandoval.",
+  description = "RenkaiDev: Desarrollo de software a medida y páginas web por Pablo Valdés Sandoval. Consultoría tecnológica presencial en Cauquenes, Chile, y servicios remotos a nivel global.",
   image = "/og-image.png" 
 } = Astro.props;
 ---
@@ -70,11 +70,35 @@ const {
         "https://www.linkedin.com/in/pablo-vald%C3%A9s-6a4b0930b/",
         "https://www.instagram.com/renkaidev/"
       ],
+      "knowsAbout": [
+        "Desarrollo de Software", 
+        "Desarrollo de Páginas Web", 
+        "Consultoría Tecnológica", 
+        "Arquitectura de Software", 
+        "Desarrollo Web Full Stack"
+      ],
+      "keywords": "renkaidev developer, renkaidev, desarrollo de software, desarrollo de páginas web, pablo valdés sandoval, cauquenes, remoto, chile",
       "priceRange": "$$$",
       "address": {
         "@type": "PostalAddress",
+        "addressLocality": "Cauquenes",
+        "addressRegion": "Maule",
         "addressCountry": "CL"
-      }
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Cauquenes"
+        },
+        {
+          "@type": "Country",
+          "name": "Chile"
+        },
+        {
+          "@type": "Place",
+          "name": "Worldwide"
+        }
+      ]
     })} />
   </head>
   <body class="font-body-md text-body-md overflow-x-hidden antialiased selection:bg-primary/30 selection:text-primary-fixed cursor-default">
