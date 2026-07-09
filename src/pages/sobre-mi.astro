@@ -3,7 +3,6 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { Image } from 'astro:assets';
-import ContactForm from '../components/ContactForm.astro';
 ---
 
 <Layout title="Sobre Mí y Contacto | Pablo Valdés Sandoval">
@@ -25,8 +24,8 @@ import ContactForm from '../components/ContactForm.astro';
                     Creo en la ingeniería honesta. En lugar de vender humo o tendencias pasajeras, me dedico a construir soluciones tecnológicas <strong>necesarias</strong> y funcionales. Mi filosofía es que la tecnología debe resolver problemas tangibles, operando en sinergia y completo equilibrio con las operaciones reales de tu negocio.
                 </p>
                 <div class="flex flex-wrap gap-4">
-                    <a class="bg-primary text-on-primary px-8 py-3 rounded-xl font-bold flex items-center gap-2 hover:opacity-90 transition-all" href="#contact">
-                        Contáctame
+                    <a class="bg-primary text-on-primary px-8 py-3 rounded-xl font-bold flex items-center gap-2 hover:opacity-90 transition-all" href="/#contact">
+                        Conversemos sobre tu proyecto
                         <span class="material-symbols-outlined notranslate text-[20px]" translate="no">arrow_forward</span>
                     </a>
                     <div class="flex items-center gap-3 px-4">
@@ -153,50 +152,6 @@ import ContactForm from '../components/ContactForm.astro';
         </div>
     </section>
 
-    <!-- Section 3 & 4: Contact Details & Form -->
-    <section class="py-section-gap px-gutter animate-on-scroll" id="contact">
-        <div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-gutter">
-            <!-- Contact Details -->
-            <div class="flex flex-col justify-between py-8">
-                <div>
-                    <h2 class="font-display-lg text-display-lg-mobile md:text-[40px] mb-6 leading-tight">¿Tienes un reto técnico?<br/><span class="text-primary">Hablemos de ello.</span></h2>
-                    <p class="text-on-surface-variant text-body-lg mb-12 max-w-md">Si buscas optimizar tu flujo de trabajo o construir una solución digital sólida de inicio a fin, estoy a un mensaje de distancia.</p>
-                    
-                    <div class="space-y-6">
-                        <a class="flex items-center gap-6 p-6 glass-card rounded-2xl group hover:border-primary/50 hover:bg-surface-container-low transition-all" href="mailto:pablovaldescontacto@gmail.com">
-                            <div class="w-14 h-14 bg-surface-container-high rounded-xl flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
-                                <span class="material-symbols-outlined notranslate text-[28px]" translate="no">mail</span>
-                            </div>
-                            <div>
-                                <p class="font-code-sm text-[12px] text-on-surface-variant uppercase">Email Directo</p>
-                                <p class="font-headline-md text-body-lg text-on-surface group-hover:text-primary transition-colors">pablovaldescontacto@gmail.com</p>
-                            </div>
-                        </a>
-                        <a class="flex items-center gap-6 p-6 glass-card rounded-2xl group hover:border-primary/50 hover:bg-surface-container-low transition-all" href="https://www.instagram.com/renkaidev/" target="_blank" rel="noopener noreferrer">
-                            <div class="w-14 h-14 bg-surface-container-high rounded-xl flex items-center justify-center text-[#E1306C] group-hover:scale-110 transition-transform">
-                                <span class="material-symbols-outlined notranslate text-[28px]" translate="no">photo_camera</span>
-                            </div>
-                            <div>
-                                <p class="font-code-sm text-[12px] text-on-surface-variant uppercase">Instagram</p>
-                                <p class="font-headline-md text-body-lg text-on-surface group-hover:text-primary transition-colors">@renkaidev</p>
-                            </div>
-                        </a>
-                        <a class="flex items-center gap-6 p-6 glass-card rounded-2xl group hover:border-primary/50 hover:bg-surface-container-low transition-all" href="https://www.linkedin.com/in/pablo-vald%C3%A9s-6a4b0930b/" target="_blank" rel="noopener noreferrer">
-                            <div class="w-14 h-14 bg-surface-container-high rounded-xl flex items-center justify-center text-[#0077B5] group-hover:scale-110 transition-transform">
-                                <span class="material-symbols-outlined notranslate text-[28px]" translate="no">work</span>
-                            </div>
-                            <div>
-                                <p class="font-code-sm text-[12px] text-on-surface-variant uppercase">LinkedIn Profile</p>
-                                <p class="font-headline-md text-body-lg text-on-surface group-hover:text-primary transition-colors">in/pablo-valdés</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <ContactForm />
-        </div>
-    </section>
 
   </main>
   

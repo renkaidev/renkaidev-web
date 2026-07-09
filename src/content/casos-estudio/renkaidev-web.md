@@ -7,18 +7,20 @@ role: "Arquitectura y Desarrollo End-to-End"
 tags: ["Astro", "Tailwind CSS", "SSG", "Cloudflare Pages"]
 ---
 
-## Contexto del Proyecto
-RenkaiDev requería una plataforma web para exhibir su catálogo de servicios de consultoría TI y desarrollo de software. El objetivo principal era transmitir una filosofía de trabajo pragmática, orientada a resolver problemas reales de negocio mediante un diseño corporativo moderno y técnico ("Cyber").
+## Problema
+Era necesario contar con una plataforma web que sirviera como portafolio y catálogo de servicios de consultoría TI. El reto principal era que el sitio debía reflejar exactamente la filosofía de trabajo que ofrezco: máximo rendimiento, seguridad absoluta y cero fricción, cumpliendo estrictamente con normativas de protección de datos.
 
-## Desafío Técnico
-El sitio debía ser ultrarrápido, seguro y cumplir estrictamente con normativas de protección de datos (como la Ley 21.719 en Chile). Para lograrlo, se requería evitar cualquier tipo de base de datos o almacenamiento de información sensible, sin sacrificar la funcionalidad de contacto comercial.
+## Análisis
+Para garantizar tiempos de respuesta inmediatos y evitar la recopilación pasiva de datos (cumplimiento Ley 21.719), se concluyó que un backend tradicional o el uso de un CMS introducían complejidad y vulnerabilidades innecesarias para un sitio corporativo puramente informativo.
 
-## Solución Propuesta
-Se implementó una arquitectura **Zero-Backend** basada en generación de sitios estáticos (SSG):
-- **Desarrollo Ultrarrápido:** Construido con **Astro v7** y **Tailwind CSS**, priorizando el rendimiento y minimizando la carga de JavaScript.
-- **Privacidad desde el Diseño:** Formularios de contacto configurados nativamente (`mailto:`) para que la gestión comercial se realice directamente desde el cliente de correo, garantizando cero recopilación automatizada de datos en el servidor.
-- **Diseño Estético:** Se adoptó una estética "Cyber" con un tema oscuro de alto contraste, tarjetas estilo *glassmorphism* (translúcidas) y brillos sutiles.
-- **Despliegue Continuo (CI/CD):** Alojado en **Cloudflare Pages** directamente desde GitHub, garantizando distribución global (Edge) y alta disponibilidad.
+## Solución
+Se implementó una arquitectura **Zero-Backend** basada en generación de sitios estáticos (SSG). Se diseñó una interfaz con estética "Cyber" (vidrio translúcido, alto contraste) y se configuraron canales de contacto directos (`mailto:`) para que la gestión comercial no requiera almacenar datos personales en servidores propios.
 
-## Lecciones Aprendidas
-Durante el desarrollo se evidenció la importancia de adaptar las herramientas al entorno. Por ejemplo, se identificaron y resolvieron problemas de compatibilidad del componente nativo de optimización de imágenes de Astro en el pipeline de Cloudflare Pages, optando por soluciones HTML nativas para mantener la estabilidad del despliegue.
+## Resultado Esperado
+Proyectar una imagen de autoridad técnica y seguridad, logrando puntajes perfectos en métricas de rendimiento web (Core Web Vitals) y eliminando por completo los costos de mantenimiento de servidores y bases de datos.
+
+## Tecnologías
+- **Framework**: Astro v7
+- **Estilos**: Tailwind CSS
+- **Despliegue**: Cloudflare
+- **Patrón**: SSG (Static Site Generation)

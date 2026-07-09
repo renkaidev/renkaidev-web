@@ -7,23 +7,20 @@ role: "Desarrollo End-to-End"
 tags: ["Transformación Digital", "Aplicación Móvil", "Flutter", "FastAPI", "PostgreSQL", "CI/CD"]
 ---
 
-## Contexto de Negocio
-Las operaciones en terreno frecuentemente sufren de cuellos de botella por el traspaso de información hacia la oficina central. Fiscalis necesitaba una forma de optimizar la recolección de datos para reducir la fricción administrativa.
+## Problema
+La empresa sufría de una grave redundancia operativa. Los empleados registraban la misma información múltiples veces a través de distintos medios no estandarizados: formularios de papel, mensajes de WhatsApp, cuadernos físicos y, finalmente, un ERP. Este proceso causaba cuellos de botella masivos, era ineficiente y muy propenso a errores.
 
-## El Problema del Cliente
-La empresa sufría de una grave redundancia operativa. Los empleados registraban la misma información múltiples veces a través de distintos medios no estandarizados: formularios de papel, mensajes de WhatsApp, cuadernos físicos y, finalmente, un ERP. Este proceso era ineficiente y propenso a errores.
+## Análisis
+Se mapeó el viaje del dato desde el terreno hasta el sistema central, evidenciando las múltiples etapas de reescritura de información. Quedó claro que el problema no era el ERP central, sino la desconexión del punto de origen de los datos con el sistema, generando fricción administrativa innecesaria.
 
-## Proceso de Análisis
-Se mapeó el viaje del dato desde el terreno hasta el sistema central, evidenciando las múltiples etapas de reescritura de información. Quedó claro que el problema no era el ERP central, sino la desconexión del punto de origen de los datos con el sistema.
+## Solución
+Se desarrolló un sistema digital *mobile-first* diseñado específicamente para centralizar y estandarizar la recolección de datos de forma directa en el lugar de trabajo (terreno), conectándose sin fricciones con el backend para eliminar el trabajo de digitación manual en la oficina.
 
-## Solución Propuesta
-Se desarrolló un sistema digital *mobile-first* diseñado específicamente para centralizar y estandarizar la recolección de datos de forma directa en el lugar de trabajo (terreno), conectándose sin fricciones con el backend.
+## Resultado Esperado
+Eliminación completa de la duplicidad de entrada de datos, reducción de errores de transcripción a cero y recuperación de horas de trabajo administrativo que antes se perdían pasando datos de papel a digital.
 
-## Implementación Técnica
+## Tecnologías
 El desarrollo se realizó con un enfoque Full-Stack moderno:
 - **Aplicación Móvil**: Flutter
 - **Backend API**: FastAPI
 - **Base de Datos**: PostgreSQL
-
-## Lecciones Aprendidas
-El desarrollo exitoso demostró que la documentación profesional, la organización metódica del proyecto y una planificación estructurada son tan importantes para el éxito final como el propio desarrollo de software.

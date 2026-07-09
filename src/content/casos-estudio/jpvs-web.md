@@ -7,20 +7,20 @@ role: "Desarrollo Frontend y UI/UX"
 tags: ["Astro", "Tailwind CSS v4", "GSAP", "SEO Local", "Landing Page", "CI/CD"]
 ---
 
-## Contexto de Negocio
-JPVS necesitaba profesionalizar su presencia digital para servicios técnicos integrales (gasfitería, soldadura, electricidad y construcción). El objetivo era crear una plataforma que generara confianza, expusiera una metodología clara y facilitara el contacto directo e inmediato mediante WhatsApp y llamadas telefónicas.
+## Problema
+JPVS necesitaba profesionalizar su presencia digital para servicios técnicos integrales (gasfitería, soldadura, electricidad y construcción). Requerían generar confianza inmediata, exponer una metodología clara y facilitar el contacto directo mediante WhatsApp y llamadas telefónicas en un nicho muy competitivo a nivel local.
 
-## Solución Propuesta
-Se construyó una *Landing Page* enfocada en conversión y accesibilidad móvil:
-- **Diseño "Blueprint Precision":** Una paleta de colores azul marino profundo con temática industrial y técnica, utilizando fuentes como *Barlow Condensed* para enfatizar la seriedad y robustez del servicio.
-- **Interactividad y Dinamismo:** Implementación avanzada de **GSAP y ScrollTrigger** para crear un carrusel dinámico interactivo y transiciones de entrada fluidas, manteniendo un alto rendimiento en dispositivos móviles sin sacrificar la estética.
-- **Rendimiento y SEO:** Construido sobre **Astro**, el sitio es estático, garantizando tiempos de carga casi instantáneos. Incorpora microdatos (Schema.org) orientados a SEO local estratégico en zonas específicas.
+## Análisis
+Se detectó que en el rubro de servicios técnicos locales, la velocidad de carga en dispositivos móviles y la claridad de la llamada a la acción (contactar por WhatsApp) definen el éxito. Se necesitaba una web estética, que transmitiera seriedad corporativa, pero sin la sobrecarga técnica de un CMS tradicional que enlenteciera la navegación.
 
-## Implementación Técnica
-La arquitectura frontal se basó en los siguientes pilares:
-- **Astro:** Motor de renderizado estático y gestión de rutas dinámicas para los diferentes servicios de la empresa.
-- **Tailwind CSS v4:** Aprovechamiento de la nueva API `@theme` para gestionar el sistema de diseño nativamente sin archivos de configuración complejos.
-- **GSAP:** Para resolver conflictos de opacidad entre CSS y animaciones JavaScript, se encapsularon componentes específicos (`.btn-wrapper`), logrando interacciones perfectas sin sobreescribir estilos.
+## Solución
+Se construyó una *Landing Page* enfocada en conversión y accesibilidad móvil, con un diseño "Blueprint Precision" (temática industrial y técnica). Se implementó interactividad avanzada con animaciones, manteniendo tiempos de carga casi instantáneos y estructura orientada a SEO local.
 
-## Lecciones Aprendidas
-El proyecto demostró cómo una arquitectura moderna y sin servidor (SSG) puede proveer soluciones empresariales robustas y de alto impacto visual sin requerir mantenimiento backend complejo, maximizando el SEO y minimizando fricciones en el embudo de captación comercial.
+## Resultado Esperado
+Dominar las búsquedas locales para servicios técnicos, maximizando la tasa de conversión (visitantes a llamadas/WhatsApp) gracias a un embudo de contacto sin fricciones y una imagen corporativa que transmite alta confianza y profesionalismo.
+
+## Tecnologías
+La arquitectura frontal se basó en los siguientes pilares de rendimiento:
+- **Framework**: Astro (SSG)
+- **Estilos**: Tailwind CSS v4
+- **Interactividad**: GSAP y ScrollTrigger

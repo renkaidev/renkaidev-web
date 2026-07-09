@@ -7,20 +7,19 @@ role: "Desarrollo de Automatización"
 tags: ["Automatización", "Mejora de Procesos", "n8n"]
 ---
 
-## Contexto de Negocio
-En organizaciones donde el tiempo directivo es un recurso crítico, la desincronización de eventos puede generar pérdida de oportunidades y problemas de gestión interna. Este proyecto abordó una fricción clave en la comunicación entre dirección y asistencia ejecutiva.
+## Problema
+En la organización, el tiempo directivo es un recurso crítico. El director y la asistencia ejecutiva mantenían agendas separadas, lo cual estaba causando inconsistencias constantes, pérdida de información valiosa, retrasos y confusión en la planificación diaria.
 
-## El Problema del Cliente
-El director y la secretaria mantenían agendas separadas. Esta redundancia operativa estaba causando inconsistencias constantes y pérdida de información valiosa, generando retrasos y confusión en la planificación.
+## Análisis
+Se observó el flujo de registro de eventos de ambas partes, identificando el punto de fricción: la falta de una única fuente de verdad (Single Source of Truth) y el trabajo manual duplicado para mantener ambas agendas al día, sumado a las limitaciones de infraestructura propias del cliente.
 
-## Proceso de Análisis
-Se observó el flujo de registro de eventos de ambas partes, identificando el punto de fricción: la falta de una única fuente de verdad (Single Source of Truth) y el trabajo manual duplicado para mantener ambas agendas al día.
+## Solución
+Se diseñó un flujo de trabajo (workflow) para automatizar la sincronización bidireccional entre ambas agendas, asegurando que cualquier cambio en una se reflejara instantáneamente en la otra de manera transparente y sin intervención humana.
 
-## Solución Propuesta
-Se diseñó un flujo de trabajo (workflow) para automatizar la sincronización bidireccional entre ambas agendas, asegurando que cualquier cambio en una se reflejara instantáneamente en la otra.
+## Resultado Esperado
+Lograr sincronía perfecta entre dirección y asistencia ejecutiva, eliminando la superposición de eventos y recuperando horas de coordinación manual, demostrando que automatizaciones pequeñas generan un retorno de inversión operativo altísimo.
 
-## Implementación Técnica
-Se utilizó **n8n** como motor de automatización de procesos. El MVP demostró la viabilidad técnica del concepto; sin embargo, la implementación se detuvo antes de pasar a producción debido a que la infraestructura necesaria por parte del cliente no estaba disponible.
-
-## Lecciones Aprendidas
-Incluso automatizaciones de escala relativamente pequeña pueden mejorar significativamente la coordinación interna de una empresa. Además, este caso demostró que las restricciones de infraestructura pueden determinar la viabilidad final de un proyecto, subrayando la importancia de evaluar los recursos técnicos antes del despliegue en producción.
+## Tecnologías
+Se construyó un MVP enfocado en integración y flujos de datos:
+- **Motor de Automatización**: n8n
+- **Integraciones**: APIs de calendarios corporativos
