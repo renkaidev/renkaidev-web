@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import CasesCarousel from '../components/CasesCarousel.astro';
 ---
 
 <Layout title="Software Developer & Analista Programador" description="Transformando problemas en soluciones tecnológicas profundas. Consultoría TI, arquitectura de software y desarrollo web por Pablo Valdés Sandoval.">
@@ -97,37 +98,9 @@ import Footer from '../components/Footer.astro';
                 </a>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Case Placeholder 1 -->
-                <div class="glass-card rounded-2xl overflow-hidden border border-outline-variant/30 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(137,206,255,0.15)] transition-all duration-500 group cursor-pointer">
-                    <div class="aspect-[21/9] bg-surface-container overflow-hidden relative">
-                        <div class="absolute inset-0 bg-primary/20 mix-blend-overlay z-10 group-hover:bg-transparent transition-colors duration-500"></div>
-                        <img alt="SaaS dashboard optimization" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2_vCVWbE3D3-02ZiqjaA_xRH3KsmhYpxbQI1BGBK2z6Z74BlWRyIOpLuE1D7LQCefJGhda9xPt72ss4lbcAjPYhxs_1c4nRdTuhTJ58vR5y4GTVkzMt_zMZW0PM9KVSr4UHaVqM5cvVUrVS7WcWBf05LEye875ohHOGD2dCQMGU_STHxt2Aoxx9UyPaYlnnfgA7untwdna8Dlg4Xm1C66HGcpDvC7PrvYm6IeXfgxkt0TP-bFVleAia66QOMf84SfiCenpWZqteQ"/>
-                    </div>
-                    <div class="p-8">
-                        <span class="font-code-sm text-primary mb-3 block">Próximamente: Caso 01</span>
-                        <h3 class="font-headline-md text-on-surface mb-3 group-hover:text-primary transition-colors">Optimización de latencia para Fintech</h3>
-                        <p class="text-on-surface-variant font-body-md">
-                            Cómo abordé un problema crítico de rendimiento reestructurando la arquitectura para consumir menos recursos y ofrecer respuestas instantáneas.
-                        </p>
-                    </div>
+                <div class="col-span-full w-full relative z-10">
+                    <CasesCarousel />
                 </div>
-                
-                <!-- Case Placeholder 2 -->
-                <div class="glass-card rounded-2xl overflow-hidden border border-outline-variant/30 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(137,206,255,0.15)] transition-all duration-500 group cursor-pointer">
-                    <div class="aspect-[21/9] bg-surface-container overflow-hidden relative">
-                        <div class="absolute inset-0 bg-primary/20 mix-blend-overlay z-10 group-hover:bg-transparent transition-colors duration-500"></div>
-                        <img alt="E-commerce scaling strategy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBvlYSOiMYniQFit2BznG4YM3pieo1tbo-3XDTy4e7GkF6GClblWP1h24NHXmn0CAqtJ2AW8F15-Qd3FD1Y370M7ehpK2X4V4pGGEVSthoXBvEuP0nGkYxiJXtYMdtPP3qzl3NLGfT6vcBNO5RB4Gjno0wt68Z84-jfrDIHT1znILMVYp7QxtCxojJb6ZUm_zWCNvQyf9lIS8qrOM8zUuja7aUQ0mtI7hsOTji8uPG-mkVlsAg_xW4XUvjUphl4Yu_Yzo9AjFNvUI"/>
-                    </div>
-                    <div class="p-8">
-                        <span class="font-code-sm text-primary mb-3 block">Próximamente: Caso 02</span>
-                        <h3 class="font-headline-md text-on-surface mb-3 group-hover:text-primary transition-colors">Escalado Crítico y Sostenibilidad</h3>
-                        <p class="text-on-surface-variant font-body-md">
-                            Resolviendo caídas de servidor durante picos de tráfico extremo, priorizando una estrategia de balanceo de carga eficiente.
-                        </p>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
