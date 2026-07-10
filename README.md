@@ -1,8 +1,10 @@
 # RenkaiDev Web
 
-Sitio web oficial de **RenkaiDev**, orientado a presentar servicios de consultoría TI, desarrollo de software, automatización de procesos y casos de estudio basados en proyectos reales.
+Sitio web oficial de **RenkaiDev**, la plataforma dual de Pablo Valdés Sandoval (Solo Developer). El sitio sirve a dos propósitos (Dual Journey) sin superponerlos:
+1. Operar como portafolio y Fact Sheet Técnico en la **búsqueda activa del primer empleo formal** como Backend Developer Junior.
+2. Presentar servicios freelance de consultoría, desarrollo de software y automatización para negocios B2B.
 
-El objetivo del proyecto es ofrecer una experiencia rápida, accesible y profesional, transmitiendo una propuesta de valor centrada en resolver problemas de negocio mediante tecnología.
+El objetivo del proyecto es ofrecer una experiencia rápida, accesible y profesional, transmitiendo una propuesta de valor centrada en resolver problemas reales mediante un enfoque analítico.
 
 ## Características
 
@@ -79,9 +81,9 @@ La aplicación está preparada para ejecutarse en **Cloudflare Pages**, aprovech
 
 ## Casos de Estudio
 
-Los casos de estudio muestran proyectos reales desarrollados por RenkaiDev, explicando el problema abordado, el análisis realizado, la solución propuesta y las tecnologías utilizadas.
+Los casos de estudio muestran proyectos reales desarrollados de forma independiente por RenkaiDev. Se detalla explícitamente que estos trabajos fueron realizados sin cobro, en colaboración con negocios que no podían costear desarrollos tradicionales, a cambio de adquirir **experiencia práctica real** previo a la búsqueda de empleo formal.
 
-Su propósito es demostrar el proceso de trabajo y el impacto de las soluciones, más que enumerar tecnologías.
+Su propósito es demostrar el proceso de trabajo, la honestidad del perfil, y el impacto de las soluciones técnicas implementadas en entornos de producción.
 
 ## Licencia
 
